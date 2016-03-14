@@ -4,7 +4,7 @@
 'use strict';
 
 function getInput() {
-    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+    console.log("Please choose either 'rock', 'paper', or 'scissors'.");
     return prompt();
 }
 function randomPlay() {
@@ -17,12 +17,9 @@ function randomPlay() {
         return "scissors";
     }
 }
-////////////////////////////////////////////////
-/*           Write Your Code Below            */
-////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    if (move === null) {
+    if (move == null) {
         return getInput();
     } else {
         return move;
@@ -30,7 +27,7 @@ function getPlayerMove(move) {
 }
 
 function getComputerMove(move) {
-    if (move === null) {
+    if (move == null) {
         return randomPlay();
     } else {
         return move;
@@ -59,14 +56,14 @@ function playToFive() {
     while ((playerWins < 5) && (computerWins < 5)) {
         if (winner === 'player') {
             playerWins += 1;
-            console.log('Player chose' + playerMove + 'while Computer chose' + computerMove);
-            console.log('Player wins!');
-            console.log('The score is currently' + playerWins + 'to' + 'computerWins');
+            console.log('Player chose' + ' ' + playerMove + ' ' + 'while Computer chose' + ' ' + computerMove);
+            console.log('Player Wins!');
+            console.log('The score is currently' + ' ' + playerWins + ' ' + 'to' + ' ' + computerWins);
         } else if (winner === 'computer') {
             computerWins += 1;
-            console.log('Player chose' + playerMove + 'while Computer chose' + computerMove);
-            console.log('Computer wins!');
-            console.log('The score is currently' + playerWins + 'to' + 'computerWins');
+            console.log('Player chose' + ' ' + playerMove + ' ' + 'while Computer chose' + ' ' + computerMove);
+            console.log('Computer Wins!');
+            console.log('The score is currently' + ' ' + playerWins + ' ' + 'to' + ' ' + computerWins);
         } else if (winner === 'tie') {
             console.log ('That was a tie.');
         }
