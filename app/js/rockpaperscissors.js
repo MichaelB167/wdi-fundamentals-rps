@@ -22,7 +22,7 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    if (move == null) {
+    if (move === null) {
         return getInput();
     } else {
         return move;
@@ -30,8 +30,8 @@ function getPlayerMove(move) {
 }
 
 function getComputerMove(move) {
-    if (move == null) {
-        return randomPlay ();
+    if (move === null) {
+        return randomPlay();
     } else {
         return move;
     }
